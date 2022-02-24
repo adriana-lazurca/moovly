@@ -1,4 +1,4 @@
-import { RegisterForm } from '../register-form/RegisterForm';
+import { RegistrationForm } from '../registration-form/RegistrationForm';
 import { Presentation } from '../presentation/Presentation';
 
 export const Signup = () => {
@@ -9,7 +9,7 @@ export const Signup = () => {
                <Presentation />
             </div>
             <div className='col'>
-               <RegisterForm />
+               <RegistrationForm />
             </div>
          </div>
       </div>
