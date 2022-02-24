@@ -1,0 +1,93 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Adriana",
+      "email": "adrianar.lazurca@gmail.com",
+      "password": "Aa@12aba"
+    },
+    {
+      "id": 2,
+      "name": "Andrei",
+      "email": "adrianar.lazurca@gmail.com",
+      "password": "Aa@12aba"
+    },
+    {
+      "email": "adrianar.lazurca@gmail.com",
+      "password": "Aa@12aba",
+      "id": 3
+    },
+    {
+      "email": "adrianar.lazurca@gmail.com",
+      "password": "Aa@12aba",
+      "id": 4
+    },
+    {
+      "rest": {
+        "email": "adrianar.lazurca@gmail.com",
+        "password": "Aa@12aba"
+      },
+      "id": 5
+    },
+    {
+      "email": "adrianar.lazurca@gmail.com",
+      "password": "Aa@12aba",
+      "id": 6
+    },
+    {
+      "email": "adrianar.lazurca@gmail.com",
+      "password": "Aa@12aba",
+      "id": 7
+    },
+    {
+      "email": "adrianar.lazurca@gmail.com",
+      "password": "Aa@12aba",
+      "id": 8
+    },
+    {
+      "email": "adrianar.lazurca@gmail.com",
+      "password": "Aa@12aba",
+      "id": 9
+    },
+    {
+      "email": "adrianar.lazurca@gmail.com",
+      "password": "Aa@12aba",
+      "id": 10
+    },
+    {
+      "email": "adrianar.lazurca@gmail.com",
+      "password": "Aa@12aba",
+      "id": 11
+    },
+    {
+      "email": "adrianar.lazurca@gmail.com",
+      "password": "Aa@12aba",
+      "id": 12
+    },
+    {
+      "email": "adrianar.lazurca@gmail.com",
+      "password": "Aa@12aba",
+      "id": 13
+    },
+    {
+      "email": "adrianar.lazurca@gmail.com",
+      "password": "Aa@12aba",
+      "id": 14
+    },
+    {
+      "email": "adrianar.lazurca@gmail.com",
+      "password": "Aa@12aba",
+      "id": 15
+    },
+    {
+      "email": "adrianar.lazurca@gmail.com",
+      "password": "Aa@12aba",
+      "id": 16
+    },
+    {
+      "email": "adrianar.lazurca@gmail.com",
+      "password": "Aa@12aba",
+      "id": 17
+    }
+  ]
+}
