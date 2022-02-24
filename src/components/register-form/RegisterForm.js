@@ -20,8 +20,8 @@ export const RegisterForm = () => {
       password: Yup.string()
          .required('Please enter a password')
          .matches(
-            "^(?=.*[A-Za-z])(?=.*d)(?=.*[@$!%*#?&])[A-Za-zd@$!%*#?&]{8,}$",
-            "Must contain 8 characters, one Uppercase, one Lowercase, one Number and one special case Character"
+            "^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z]).{8}$",
+            "Must contain 8 characters, one Uppercase, two Lowercase, two Digits and one special case Character"
          ),
 
 
