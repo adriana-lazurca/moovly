@@ -1,16 +1,25 @@
 import { Menu } from '../menu/Menu';
-
+import { useLocalStorage } from '../../hooks/useLocalStorage';
 
 export const Layout = (props) => {
-    return (
-        <section>
-            <header>
-                <Menu />
-            </header>
+   const [userEmail] = useLocalStorage('userEmail', '');
 
-            <main>
-                {props.children}
-            </main>
-        </section>
-    );
-}
+   return (
+      <div className='container header-color mb-5'>
+         <div className='row header bg-info'>
+            <div className='col-8 '>
+               <Menu />
+            </div>
+            <div className='col-4'>
+               {' '}
+               <>
+                  {userEmail && <div>Hello {userEmail}</div>}
+
+                  {!userEmail && <div>Hello stranger</div>}
+               </>
+            </div>
+         </div>
+         <div>{props.children}</div>
+      </div>
+   );
+};

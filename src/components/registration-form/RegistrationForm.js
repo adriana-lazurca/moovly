@@ -1,13 +1,13 @@
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
 
 import { Input } from '../input/Input';
 import { createUser } from '../../apis/user';
+import { useLocalStorage } from '../../hooks/useLocalStorage';
 
 export const RegistrationForm = () => {
-   const [userEmail, setUserEmail] = useState('');
+   const [, setUserEmail] = useLocalStorage('userEmail', '');
 
    const initialValues = {
       email: '',
