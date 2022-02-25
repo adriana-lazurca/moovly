@@ -1,11 +1,12 @@
-import { Formik, Form } from 'formik';
+import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
 
 import { Input } from '../input/Input';
+import { Checkbox } from '../checkbox/Checkbox';
 import { createUser } from '../../apis/user';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
-import './registration-form.css'
+import './registration-form.css';
 
 export const RegistrationForm = () => {
    const [, setUserEmail] = useLocalStorage('userEmail', '');
@@ -14,6 +15,7 @@ export const RegistrationForm = () => {
       email: '',
       password: '',
       confirmPassword: '',
+      rememberMe: false,
    };
 
    const validationSchema = Yup.object({
@@ -44,14 +46,16 @@ export const RegistrationForm = () => {
    let navigate = useNavigate();
 
    return (
-      <div className="w-75 px-4">
-         <h2 className="mt-5 mb-3">Welcome</h2>
-         <h6 className="mt-2 mb-4">Create account to continue</h6>
+      <div className='w-75 px-4'>
+         <h2 className='mt-5 mb-3'>Welcome!</h2>
+         <h6 className='mt-2 mb-4 text-muted text-opacity-25'>Create account to continue</h6>
          <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
             <Form>
-               <Input label='Email' name='email' type='email' />
-               <Input label='PASSWORD' name='password' type='password' />
-               <Input label='REPEAT PASSWORD' name='confirmPassword' type='password' />
+               <Input label='Email' name='email' type='email' placeholder='Enter email' />
+               <Input label='PASSWORD' name='password' type='password' placeholder='Enter password' />
+               <Input label='REPEAT PASSWORD' name='confirmPassword' type='password' placeholder='Enter password' />
+               <Checkbox name='rememberMe' label='Remember me' />
+
                <div className='d-grid gap-2'>
                   <button className='btn mt-4 text-white' type='submit'>
                      Sign up
