@@ -16,6 +16,11 @@ The project is a mini single page app (SPA) containing as main page the sign up 
 
 To persist user state through a page refresh, I used local storage, with the help of a [hook](https://usehooks.com/useLocalStorage).
 
+### Run project
+```
+npm start
+```
+
 ### APIs
 
 -  **Get users**<br />
