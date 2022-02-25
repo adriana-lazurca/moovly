@@ -47,10 +47,10 @@ export const RegistrationForm = () => {
 
    return (
       <div className='w-75 px-4'>
-         <h2 className='mt-5 mb-3'>Welcome!</h2>
+         <h1 className='mt-5 mb-3 fw-bolder'>Welcome!</h1>
          <h6 className='mt-2 mb-4 text-muted text-opacity-25'>Create account to continue</h6>
          <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
-            <Form>
+            <Form className='fw-bold'>
                <Input label='Email' name='email' type='email' placeholder='Enter email' />
                <Input label='PASSWORD' name='password' type='password' placeholder='Enter password' />
                <Input label='REPEAT PASSWORD' name='confirmPassword' type='password' placeholder='Enter password' />
