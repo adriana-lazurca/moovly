@@ -1,0 +1,20 @@
+.presentation {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #232D64;
+}
+
+.presentation img:last-child {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}

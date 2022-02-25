@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { Input } from '../input/Input';
 import { createUser } from '../../apis/user';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
+import './registration-form.css'
 
 export const RegistrationForm = () => {
    const [, setUserEmail] = useLocalStorage('userEmail', '');
@@ -43,17 +44,19 @@ export const RegistrationForm = () => {
    let navigate = useNavigate();
 
    return (
-      <div>
-         <h2>Welcome</h2>
-         <h6>Create account to continue</h6>
+      <div className="w-75 px-4">
+         <h2 className="mt-5 mb-3">Welcome</h2>
+         <h6 className="mt-2 mb-4">Create account to continue</h6>
          <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
             <Form>
                <Input label='Email' name='email' type='email' />
                <Input label='PASSWORD' name='password' type='password' />
                <Input label='REPEAT PASSWORD' name='confirmPassword' type='password' />
-               <button className='btn btn-danger mt-3' type='submit'>
-                  Sign up
-               </button>
+               <div className='d-grid gap-2'>
+                  <button className='btn mt-4 text-white' type='submit'>
+                     Sign up
+                  </button>
+               </div>
             </Form>
          </Formik>
       </div>
