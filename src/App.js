@@ -1,10 +1,17 @@
-import { Navigation } from './components/navigation/Navigation';
-import './App.css';
+export const add = (x, y) => x + y;
 
-function App() {
-   return (
-      <Navigation />
-   );
-}
+export const total = (shipping, subtotal) => {
+   return '$' + add(shipping, subtotal);
+};
 
-export default App;
+
+// import { Navigation } from './components/navigation/Navigation';
+// import './App.css';
+
+// function App() {
+//    return (
+//       <Navigation />
+//    );
+// }
+
+// export default App;
