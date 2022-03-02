@@ -1,5 +1,6 @@
 import { Menu } from '../menu/Menu';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
+import React from 'react';
 
 export const Layout = (props) => {
    const [userEmail] = useLocalStorage('userEmail', '');
